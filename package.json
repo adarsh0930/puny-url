@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "express": "^4.18.2",
+    "node": "^20.5.1"
+  },
+  "name": "puny-url",
+  "version": "1.0.0",
+  "main": "server-alive.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Adarsh0930/puny-url.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Adarsh0930/puny-url/issues"
+  },
+  "homepage": "https://github.com/Adarsh0930/puny-url#readme",
+  "description": ""
+}
