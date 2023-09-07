@@ -1,12 +1,13 @@
 {
   "dependencies": {
+    "dotenv": "^16.3.1",
     "express": "^4.18.2",
+    "mongodb": "^6.0.0",
     "node": "^20.5.1"
   },
   "name": "puny-url",
   "version": "1.0.0",
   "main": "server-alive.js",
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
