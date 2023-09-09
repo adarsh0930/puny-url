@@ -14,7 +14,7 @@ async function writeToDb(url) {
     const database = client.db("Projects");
     const punyUrls = database.collection("puny_url");
 // create a document to be inserted
-    const doc = {OriginalURL: url};
+    const doc = {OriginalURL: url, Count: 0};
     const result = await punyUrls.insertOne(doc);
     return result;
 }
@@ -24,9 +24,10 @@ async function searchInDb(uniqueId) {
     const database = client.db("Projects");
     const punyUrls = database.collection("puny_url");
 // searching uniqueId by findOne method from mongodb
-    result = await punyUrls.findOne({
-        '_id': new ObjectId(uniqueId)
-      })
+    const filter = {'_id': new ObjectId(uniqueId)};
+    const result = await punyUrls.findOne(filter);
+    const updateDoc = {$set: {Count: result.Count + 1}};
+    const update = await punyUrls.updateOne(filter, updateDoc);
     return result;
 }
 

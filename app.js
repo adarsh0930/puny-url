@@ -21,7 +21,8 @@ app.post('/shortner', async function (req, res) {
 app.get('/:punyUrl', async function(req, res) {
     const uniqueId = req.params.punyUrl
     const originalUrl = await getOriginalUrl(uniqueId)    
-    console.log('URL: ', originalUrl)
+    // console.log('URL: ', originalUrl)
+    // res.status(302).location(originalUrl).send()
     res.redirect(originalUrl)
 })
 
