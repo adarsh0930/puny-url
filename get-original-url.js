@@ -1,5 +1,5 @@
 require('mongodb')
-const {searchInDb} = require('./db')
+const {searchInDb} = require('./database.js')
 
 
 async function getOriginalUrl(uniqueId) {
