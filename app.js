@@ -1,4 +1,3 @@
-// importing dotenv configurations to process my .env file
 require('dotenv').config()
 const express = require('express')
 const createShortUrl = require('./create-short-url')
@@ -14,6 +13,7 @@ app.get('/health', (req, res) => {
 
 app.post('/shortner', async function (req, res) {
     const url = req.body.URL
+    // console.log(url)
     const shortURL = await createShortUrl(url)
     res.send(shortURL)
 })

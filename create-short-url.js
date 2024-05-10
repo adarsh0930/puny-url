@@ -1,5 +1,5 @@
 require("mongodb");
-const {writeToDb} = require('./db')
+const {writeToDb} = require('./database.js')
 
 async function createShortUrl (url) { 
     const result = await writeToDb(url)
