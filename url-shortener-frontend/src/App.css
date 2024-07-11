@@ -1,0 +1,135 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: url("../public/background.jpg") no-repeat;
+  background-position: 80% center; /* Move the background image 20% to the right */
+  background-size: cover;
+  color: #333;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.6); /* Light background overlay */
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 20px; /* Move the header to the top of the page */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.logo {
+  width: 100px; /* Adjust size as needed */
+  height: 100px;
+  margin-right: 20px;
+}
+
+h1 {
+  font-size: 3rem; /* Increase heading size */
+  color: #6a0dad; /* Purple color */
+}
+
+form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 150px; /* Add margin-top to move form below the header */
+  position: relative;
+}
+
+.input-container {
+  position: relative;
+  width: 400px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 15px;
+  font-size: 16px;
+  border: 2px solid #6a0dad; /* Purple border */
+  border-radius: 25px; /* More rounded corners */
+  background-color: #f0f0f0; /* Light grey background */
+  color: #333; /* Dark text color */
+  padding-right: 100px; /* Make space for the button inside the input */
+}
+
+button {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: -30%;
+  padding: 15px 20px; /* Increase padding for the button */
+  font-size: 16px;
+  background-color: #6a0dad; /* Purple background */
+  color: #fff; /* White text */
+  border: none;
+  border-radius: 25px; /* Rounded corners */
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+input:invalid + button:hover {
+  transform: translateX(-292%);
+}
+
+.result-container {
+  position: relative;
+  width: 400px;
+}
+
+.result-container input {
+  width: 100%;
+  padding: 15px;
+  font-size: 16px;
+  border: 2px solid #6a0dad; /* Purple border */
+  border-radius: 25px; /* More rounded corners */
+  background-color: #f0f0f0; /* Light grey background */
+  color: #333; /* Dark text color */
+  padding-right: 100px; /* Make space for the button inside the input */
+}
+
+.result-container button {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: -30%;
+  padding: 15px 20px; /* Increase padding for the button */
+  font-size: 16px;
+  background-color: #6a0dad; /* Purple background */
+  color: #fff; /* White text */
+  border: none;
+  border-radius: 25px; /* Rounded corners */
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.new-url-btn {
+  margin-top: 80px; /* Add margin to separate from the result box */
+  /* margin-bottom: -10px; */
+  /* padding: 15px 20px; Increase padding for the button */
+  padding: auto;
+  font-size: 16px;
+  background-color: #6a0dad; /* Purple background */
+  color: #fff; /* White text */
+  border: none;
+  border-radius: 25px; /* Rounded corners */
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+}
