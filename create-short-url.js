@@ -1,10 +1,9 @@
-require("mongodb");
-const {writeToDb} = require('./database.js')
+const { writeToDb } = require("./database.js");
 
-async function createShortUrl (url) { 
-    const result = await writeToDb(url)
-    const uniqueID = result.insertedId
-    return `http://localhost:4000/${uniqueID}`
+async function createShortUrl(url) {
+  const result = await writeToDb(url);
+  const uniqueId = result.uniqueId;
+  return `http://localhost:4000/${uniqueId}`;
 }
 
-module.exports = createShortUrl
+module.exports = createShortUrl;
