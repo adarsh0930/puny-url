@@ -1,10 +1,8 @@
-require('mongodb')
-const {searchInDb} = require('./database.js')
-
+const { searchInDb } = require("./database.js");
 
 async function getOriginalUrl(uniqueId) {
-    const doc = await searchInDb(uniqueId)
-    return doc.OriginalURL
+  const doc = await searchInDb(uniqueId);
+  return doc ? doc.OriginalURL : null;
 }
 
-module.exports = getOriginalUrl
+module.exports = getOriginalUrl;
