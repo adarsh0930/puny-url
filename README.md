@@ -52,32 +52,44 @@ Edit
    ```bash
    git clone https://github.com/adarsh0930/puny-url.git
    cd puny-url
-Install dependencies:
+   ```
+2. **Install dependencies:**
 
+```
 bash
 Copy
 Edit
 npm install
-Set up environment variables:
+```
+
+3. **Set up environment variables:**
 
 Create a .env file in the root directory and add:
-
+```
 env
 Copy
 Edit
 SQLITE_PATH=./database.sqlite
-Start the server:
+```
 
+4. **Start the server:**
+```
 bash
 Copy
 Edit
 node index.js
+```
 The server will run on http://localhost:3000.
 
-Access the frontend:
+5.**Start the frontend:**
 
-Open url-shortener-frontend/index.html in your browser to use the application.
-
+```
+bash
+Copy
+Edit
+npm start
+```
+App will run at [http://localhost:3000](http://localhost:3000)
 ---  
 
 📚 Key Learnings
@@ -94,3 +106,5 @@ Open url-shortener-frontend/index.html in your browser to use the application.
 - Store creation timestamps and click analytics for short URLs
 - Add custom alias support for short URLs
 - Implement validation and error handling on the frontend
+
+---  
