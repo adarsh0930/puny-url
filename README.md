@@ -21,7 +21,7 @@ A minimalistic and efficient URL shortener built with Node.js, Express, and SQLi
 - **Database:** SQLite
 
 ## 📁 Project Structure
-
+```
 puny-url/
 ├── url-shortener-frontend/ # Frontend files
 │ ├── index.html
@@ -34,10 +34,7 @@ puny-url/
 ├── index.js # Main server file
 ├── package.json
 └── README.md
-
-bash
-Copy
-Edit
+```
 
 ## ⚙️ Setup Instructions
 
@@ -56,9 +53,6 @@ Edit
 2. **Install dependencies:**
 
 ```
-bash
-Copy
-Edit
 npm install
 ```
 
@@ -66,27 +60,18 @@ npm install
 
 Create a .env file in the root directory and add:
 ```
-env
-Copy
-Edit
 SQLITE_PATH=./database.sqlite
 ```
 
 4. **Start the server:**
 ```
-bash
-Copy
-Edit
 node index.js
 ```
 The server will run on http://localhost:3000.
 
-5.**Start the frontend:**
+5.**Switch to frontend directory then Start the frontend app:**
 
 ```
-bash
-Copy
-Edit
 npm start
 ```
 App will run at [http://localhost:3000](http://localhost:3000)
