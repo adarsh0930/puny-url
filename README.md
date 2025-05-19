@@ -23,15 +23,10 @@ A minimalistic and efficient URL shortener built with Node.js, Express, and SQLi
 ## 📁 Project Structure
 
 puny-url/
-├── url-shortener-frontend
-  ├── public/
-  ├── src/
-   ├── components/ # Reusable React components
-   ├── App.js # Main App component
-   ├── index.js # React entry point
-   └── styles.css # Optional custom styles
-  ├── package.json
-  └── README.md
+├── url-shortener-frontend/ # Frontend files
+│ ├── index.html
+│ ├── styles.css
+│ └── script.js
 ├── create-short-url.js # Endpoint to create short URLs
 ├── get-original-url.js # Endpoint to retrieve original URLs
 ├── generateUniqueId.js # Utility to generate unique IDs
@@ -40,6 +35,9 @@ puny-url/
 ├── package.json
 └── README.md
 
+bash
+Copy
+Edit
 
 ## ⚙️ Setup Instructions
 
@@ -56,38 +54,43 @@ puny-url/
    cd puny-url
 Install dependencies:
 
+bash
+Copy
+Edit
 npm install
 Set up environment variables:
 
 Create a .env file in the root directory and add:
 
+env
+Copy
+Edit
 SQLITE_PATH=./database.sqlite
 Start the server:
 
-
+bash
+Copy
+Edit
 node index.js
 The server will run on http://localhost:3000.
 
 Access the frontend:
 
-Open url-shortener-frontend/index.jx in your browser to use the application.
+Open url-shortener-frontend/index.html in your browser to use the application.
+
+---  
 
 📚 Key Learnings
-Building a RESTful API using Express
+- Building a RESTful API using Express
+- Handling URL routing and redirection
+- Working with SQLite as a lightweight database solution
+- Creating a clean separation between frontend and backend code
+- Generating unique short codes safely and efficiently
 
-Handling URL routing and redirection
-
-Working with SQLite as a lightweight database solution
-
-Creating a clean separation between frontend and backend code
-
-Generating unique short codes safely and efficiently
+---  
 
 🚧 Future Improvements
-Add a user interface for viewing and managing created URLs
-
-Store creation timestamps and click analytics for short URLs
-
-Add custom alias support for short URLs
-
-Implement validation and error handling on the frontend
+- Add a user interface for viewing and managing created URLs
+- Store creation timestamps and click analytics for short URLs
+- Add custom alias support for short URLs
+- Implement validation and error handling on the frontend
